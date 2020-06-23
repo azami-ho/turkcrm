@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+window.onscroll = function () { myFunction() };
 
-// Write your JavaScript code.
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("logo").className = "min-logo";
+    } else {
+        document.getElementById("logo").className = "max-logo";
+    }
+    console.log(document.body.scrollTop);
+}
