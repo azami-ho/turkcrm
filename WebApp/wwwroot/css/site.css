@@ -91,8 +91,9 @@ table {
         display: inline-block;
         padding: 0 10px;
     }
-        .menu > ul > li:hover .sub-menu{
-            display:block;
+
+        .menu > ul > li:hover .sub-menu {
+            display: block;
         }
 
         .menu > ul > li > a {
@@ -141,6 +142,7 @@ table {
     z-index: 99;
     position: relative;
     top: -125px;
+    overflow: hidden;
 }
 
     .wom > img {
@@ -170,3 +172,210 @@ table {
             opacity: 0.7;
             letter-spacing: 0.5px;
         }
+
+header {
+    height: 530px;
+}
+
+main {
+    background: rgb(249,247,248);
+    width: 100%;
+    padding: 20px 0;
+}
+
+#description {
+    display: flex;
+    min-height: 230px;
+    padding: 0 100px;
+}
+
+    #description .des {
+        flex: 6;
+    }
+
+        #description .des p {
+            text-align: justify;
+        }
+
+#media {
+    min-height: 300px;
+    text-align: center;
+    padding: 0 100px 70px;
+}
+
+    #media .media-title {
+        margin-bottom: 20px;
+    }
+
+    #media h1 {
+        font-weight: bold;
+        color: rgb(52,60,71);
+        font-size: 26px;
+    }
+
+
+    #media .media-content {
+        flex: 6;
+        padding: 30px 30px;
+        display: inline-block;
+    }
+
+        #media .media-content img {
+            width: 350px;
+        }
+
+
+#suport {
+    background: rgb(82,182,216);
+    min-height: 350px;
+    width: 100%;
+    padding: 50px 200px;
+}
+
+
+    #suport .suport-main {
+        position: relative;
+        overflow: hidden;
+    }
+
+.suport-main > img {
+    width: 550px;
+    opacity: 0.5;
+}
+
+.suport-text {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    display: inline-block;
+    top: 0;
+    color: #fff;
+    right: 0;
+}
+
+    .suport-text h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .suport-text hr {
+        border: 1.5px solid rgb(220,199,28);
+    }
+
+    .suport-text p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+.suport-media-box {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+}
+
+    .suport-media-box .suport-media {
+        display: inline-block;
+        width: 45%;
+        margin-right: 20px;
+    }
+
+        .suport-media-box .suport-media img {
+            width: 100%;
+        }
+
+
+#options {
+    min-height: 350px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+    #options .option-box {
+    }
+
+        #options .option-box .option-item {
+            display: inline-block;
+            background: #fff;
+            box-shadow: 2px 2px 5px #888888;
+            border-radius: 5px;
+            padding: 35px 40px;
+            text-align: center;
+            margin: 15px;
+        }
+
+.option-item h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#options h1 {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 35px 0 30px;
+}
+
+.option-item span {
+    display: block;
+    max-width: 250px;
+    padding: 10px 0 0 0;
+    line-height: 25px;
+    font-weight: bold;
+    height: auto;
+}
+
+#contact {
+    min-height: 350px;
+    background: rgb(82,182,216);
+    padding: 0 100px;
+}
+
+    #contact .world-map {
+        display: inline-block;
+        float: right;
+    }
+
+    #contact .contact {
+        display: inline-block;
+        padding: 50px 0;
+    }
+
+        #contact .contact h2 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        #contact .contact > a {
+            color: rgb(254,247,143);
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 20px;
+            display: block;
+            font-weight: bold;
+        }
+
+        #contact .contact > p {
+            text-align: justify;
+            display: block;
+            color: #fff;
+            max-width: 350px;
+            margin-top: 30px;
+        }
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+
+    footer p {
+        text-align: right;
+        position: absolute;
+        left: 45%;
+        font-weight: bold;
+    }
