@@ -366,6 +366,50 @@ main {
             margin-top: 30px;
         }
 
+#content {
+    width: 100%;
+    height: 150px;
+    background: rgb(28,176,202);
+}
+
+    #content .content-box {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+        #content .content-box .content-item {
+            flex: 6;
+            display: flex;
+            padding: 50px 30px;
+        }
+
+            #content .content-box .content-item:nth-child(2n) > span {
+                border-left: 1px solid #ccc;
+                padding-left: 30px;
+            }
+
+            #content .content-box .content-item .content-text {
+                display: inline-block;
+                padding-left: 20px;
+            }
+
+                #content .content-box .content-item .content-text h3 {
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                }
+
+                #content .content-box .content-item .content-text p {
+                    color: #fff;
+                }
+
+            #content .content-box .content-item i {
+                color: #fff;
+                font-size: 2em;
+            }
+
 
 footer {
     width: 100%;
