@@ -168,7 +168,7 @@ table {
         width: 250px;
     }
 
-        .wom .wom-title > span:first-child {
+        .wom .wom-title > h1:first-child {
             font-size: 2.7em;
             word-spacing: 9999999px;
             font-weight: bold;
@@ -190,7 +190,7 @@ header {
 main {
     background: rgb(249,247,248);
     width: 100%;
-    padding: 20px 0;
+    padding-top: 20px ;
 }
 
 #description {
@@ -218,7 +218,7 @@ main {
         margin-bottom: 20px;
     }
 
-    #media h1 {
+    #media h2 {
         font-weight: bold;
         color: rgb(52,60,71);
         font-size: 26px;
@@ -323,7 +323,7 @@ main {
     font-size: 24px;
 }
 
-#options h1 {
+#options h2 {
     font-weight: bold;
     font-size: 26px;
     margin: 35px 0 30px;
@@ -339,7 +339,7 @@ main {
 }
 
 #contact {
-    min-height: 350px;
+    min-height: 400px;
     background: rgb(82,182,216);
     padding: 0 100px;
 }
@@ -428,6 +428,7 @@ footer {
     width: 100%;
     text-align: center;
     height: 50px;
+    background: #333;
 }
 
     footer p {
@@ -435,6 +436,8 @@ footer {
         position: absolute;
         left: 45%;
         font-weight: bold;
+        color: #fff;
+        line-height:50px;
     }
 
 
@@ -449,7 +452,7 @@ footer {
         text-align: center;
     }
 
-        #gallery .gallery-box h3 {
+        #gallery .gallery-box h2 {
             font-size: 1.8em;
         }
 
@@ -625,6 +628,35 @@ footer {
             padding: 0 5px;
         }
 
-            #ads .ads-media .ads-media-item  img {
+            #ads .ads-media .ads-media-item img {
                 width: 100px;
+            }
+
+#footer {
+    background: rgb(28,176,202);
+    width: 100%;
+    padding: 50px 0;
+}
+
+    #footer .footer-box {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        padding-left: 100px;
+    }
+
+        #footer .footer-box .footer-col {
+            flex: 3;
+            flex-direction: row;
+            color: #fff;
+            padding: 10px;
+        }
+
+            #footer .footer-box .footer-col > h5 {
+                font-size: 1.2em;
+            }
+
+            #footer .footer-box .footer-col > div {
+                border-bottom: 1px solid gainsboro;
+                padding: 15px 0;
             }
