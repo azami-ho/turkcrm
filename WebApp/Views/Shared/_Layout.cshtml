@@ -14,7 +14,7 @@
             <div class="logo">
                 <img src="~/img/Logo.jpg" id="logo" class="max-logo" />
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -36,13 +36,14 @@
                     <li>
                         <a href="#">About</a>
                     </li>
-
-
-
+                    <a href="javascript:void(0);" class="nav-close-icon" onclick="CloseMenu()">
+                        <i class="fa fa-times"></i>
+                    </a>
                 </ul>
                 <a href="javascript:void(0);" class="nav-icon" onclick="ResponsiveMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
+                
             </div>
         </nav>
         @RenderSection("Header", false)

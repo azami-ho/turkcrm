@@ -89,6 +89,10 @@ table {
     width: 50px;
 }
 
+.nav-close-icon {
+    display: none;
+}
+
 .max-logo {
     -webkit-transition: width 0.3s ease-in-out;
     -moz-transition: width 0.3s ease-in-out;
@@ -157,6 +161,7 @@ table {
     position: relative;
     top: -125px;
     overflow: hidden;
+    display: block;
 }
 
     .wom > img {
@@ -663,15 +668,95 @@ footer {
                 padding: 15px 0;
             }
 
-
-@media (min-width: 576px) {
+@media (max-width: 1200px) {
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+    .wom {
+        display: none;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 576px) {
+    /*.main-nav ul {
+        display: none;
+    }*/
+
+    .main-nav {
+        display: block;
+    }
+
+
+        .main-nav .logo {
+            padding-left: 0;
+            display: inline-block;
+        }
+
+        .main-nav .menu {
+            padding: 0 35px;
+            display: inline-block;
+            width: 45%;
+            float: left;
+        }
+
+        .main-nav .nav-icon {
+            display: inline-block;
+            font-size: 2em;
+        }
+
+    .menu > ul {
+        position: absolute;
+        z-index: 999;
+        background: #ccc;
+        left: 0;
+        width: 250px;
+        left: -100%;
+        border-top-right-radius: 10px;
+        min-height: 500px;
+        -webkit-transition: left 0.8s ease-in-out;
+        -moz-transition: left 0.8s ease-in-out;
+        -o-transition: left 0.8s ease-in-out;
+        transition: left 0.8s ease-in-out;
+    }
+
+    .nav-icon {
+        line-height: 50px;
+    }
+
+    .max-logo, min-logo {
+        width: 100px;
+    }
+
+    .menu.responsive > ul {
+        -webkit-transition: left 0.5s ease-in-out;
+        -moz-transition: left 0.5s ease-in-out;
+        -o-transition: left 0.5s ease-in-out;
+        transition: left 0.5s ease-in-out;
+        left: 0;
+    }
+
+        .menu.responsive > ul li {
+            display: block;
+            float: none;
+            padding-left: 35px;
+        }
+
+    .nav-close-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu .sub-menu {
+        position: unset;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        display: none;
+    }
 }
