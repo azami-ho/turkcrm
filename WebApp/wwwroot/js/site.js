@@ -14,10 +14,15 @@ function myFunction() {
 }
 
 function ResponsiveMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    var x = document.getElementById("menu");
+    if (x.className === "menu") {
         x.className += " responsive";
     } else {
-        x.className = "topnav";
+        x.className = "menu";
     }
+}
+
+function CloseMenu() {
+    var x = document.getElementById("menu");
+    x.className = "menu";
 }
