@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,41 +17,44 @@
             <div class="menu" id="menu">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/" title="Ana Sayfa">Ana Sayfa</a>
                     </li>
-                    <li>
-                        <a href="#">Products</a>
+                    @*<li>
+                        <a href="/">Products</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="#">Services</a>
+                                <a href="/">Services</a>
                             </li>
                             <li>
-                                <a href="#">Web App</a>
+                                <a href="/">Web App</a>
                             </li>
                             <li>
-                                <a href="#">Consult</a>
+                                <a href="/">Consult</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    @*<li>
+
                         <a href="#">About</a>
-                    </li>
+                    </li>*@
                     <a href="javascript:void(0);" class="nav-close-icon" onclick="CloseMenu()">
                         <i class="fa fa-times"></i>
                     </a>
+
                 </ul>
                 <a href="javascript:void(0);" class="nav-icon" onclick="ResponsiveMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
-                
+
             </div>
         </nav>
         @RenderSection("Header", false)
     </header>
     @RenderBody()
+
     <footer>
         <p>
-            All Right Reserved
+            © @DateTime.Now.Year <a href="https://turkcrm.net" title="Turk CRM Programı.">Türk CRM Programı</a>
         </p>
     </footer>
 
