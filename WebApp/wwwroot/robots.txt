@@ -1,4 +1,5 @@
 ﻿User-Agent: *
 Disallow: 
+Allow: /
 
-Sitemap: http://turkcrm.net/sitemap.xml
+Sitemap: https://turkcrm.net/sitemap.xml
