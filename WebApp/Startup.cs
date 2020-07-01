@@ -26,6 +26,11 @@ namespace WebApp
         {
             TurkcrmComponents.ConnectionString = Configuration.GetConnectionString("TurkcrmConnectionString"); ;
             services.AddControllersWithViews();
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,8 +47,8 @@ namespace WebApp
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+            //app.UseResponseCompression();
             app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthorization();
