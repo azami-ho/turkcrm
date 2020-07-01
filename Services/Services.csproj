@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\DataStructure\DataStructure.csproj" />
+    <ProjectReference Include="..\Resources\Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Framework">
+      <HintPath>..\TParty\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Radyn">
+      <HintPath>..\TParty\Radyn.dll</HintPath>
+    </Reference>
+    <Reference Include="Radyn.Utility">
+      <HintPath>..\TParty\Radyn.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Radyn.Utility.resources">
+      <HintPath>..\TParty\Radyn.Utility.resources.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

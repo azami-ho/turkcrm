@@ -5,7 +5,23 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{A928E6C2-5F0A-4095-BDB3-FD913E0118B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{03DB65FB-19F8-4E4D-9DAE-783E6B06B44D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{03DB65FB-19F8-4E4D-9DAE-783E6B06B44D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructure\DataStructure.csproj", "{0A22BDCD-5904-4A1F-A4A7-9354CD3BCB00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{946BD49B-9AFE-4308-B703-F1CA6B796ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TParty", "TParty", "{5626B294-92ED-475B-82A5-B6AF2792C00C}"
+	ProjectSection(SolutionItems) = preProject
+		TParty\Framework.dll = TParty\Framework.dll
+		TParty\Radyn.dll = TParty\Radyn.dll
+		TParty\Radyn.Utility.dll = TParty\Radyn.Utility.dll
+		TParty\Radyn.Utility.resources.dll = TParty\Radyn.Utility.resources.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F144DADA-BEEC-4584-B9A4-7A11B1FB871E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{877B41B4-E013-439A-8B34-312EC7E00A8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +37,18 @@ Global
 		{03DB65FB-19F8-4E4D-9DAE-783E6B06B44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03DB65FB-19F8-4E4D-9DAE-783E6B06B44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03DB65FB-19F8-4E4D-9DAE-783E6B06B44D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A22BDCD-5904-4A1F-A4A7-9354CD3BCB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A22BDCD-5904-4A1F-A4A7-9354CD3BCB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A22BDCD-5904-4A1F-A4A7-9354CD3BCB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A22BDCD-5904-4A1F-A4A7-9354CD3BCB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F144DADA-BEEC-4584-B9A4-7A11B1FB871E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F144DADA-BEEC-4584-B9A4-7A11B1FB871E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F144DADA-BEEC-4584-B9A4-7A11B1FB871E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F144DADA-BEEC-4584-B9A4-7A11B1FB871E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877B41B4-E013-439A-8B34-312EC7E00A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877B41B4-E013-439A-8B34-312EC7E00A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877B41B4-E013-439A-8B34-312EC7E00A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877B41B4-E013-439A-8B34-312EC7E00A8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
