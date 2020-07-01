@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructure\DataStructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Framework">
+      <HintPath>..\TParty\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Radyn">
+      <HintPath>..\TParty\Radyn.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

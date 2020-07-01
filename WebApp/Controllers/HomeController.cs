@@ -20,6 +20,43 @@ namespace TurkCRM.WebApp.Controllers
             return View();
         }
 
+        public IActionResult Nav(string text)
+
+        {
+            //if (text == "favicon.ico") return null;
+            //if (string.IsNullOrEmpty(text))
+            //{
+            //    RadynInvokeActionModel result = this.RadynRenderActionInvoke("/Reservation/Reserve/Index");
+            //    if (result != null)
+            //    {
+            //        ViewBag.Html = result.Html;
+            //        return View();
+            //    }
+            //    return View();
+            //}
+            //else
+            //{
+            //    string url = string.Empty;
+            //    switch (text.ToLower())
+            //    {
+            //        case "admin":
+            //            return Redirect("/Security/User/Login");
+            //            break;
+            //        default:
+            //            url = RouteConfig.GetSuiteRoute(text);
+            //            break;
+            //    }
+            //    RadynInvokeActionModel result = this.RadynRenderActionInvoke(url);
+            //    if (result != null)
+            //    {
+            //        ViewBag.Html = result.Html;
+            //        return View();
+            //    }
+
+               return View();
+            //}
+        }
+
         public IActionResult Privacy()
         {
             return View();
