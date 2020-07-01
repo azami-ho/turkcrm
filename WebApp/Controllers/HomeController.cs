@@ -14,6 +14,7 @@ namespace TurkCRM.WebApp.Controllers
             _logger = logger;
         }
 
+        [ResponseCache(Duration = 20,VaryByHeader = "User-Agent")]
         public IActionResult Index()
         {
             return View();
