@@ -196,14 +196,11 @@ section {
             letter-spacing: 0.5px;
         }
 
-header {
-    height: 530px;
-}
-
 main {
     background: rgb(249,247,248);
     width: 100%;
     padding-top: 20px;
+    margin-top: -195px;
 }
 
 #description {
@@ -676,10 +673,22 @@ footer {
             }
 
 @media (max-width: 1200px) {
+    .logo {
+        flex: 1;
+        padding: 0 0 0 40px;
+    }
+
     #media {
         padding: 0;
         width: 100%;
         overflow: hidden;
+    }
+
+    main {
+        background: rgb(249,247,248);
+        width: 100%;
+        padding-top: 20px;
+        margin-top: -130px;
     }
 
     #description {
@@ -718,6 +727,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     .box-4, .box-5 {
         top: -192px;
     }
@@ -789,6 +799,13 @@ footer {
         width: 100%;
     }
 
+    main {
+        background: rgb(249,247,248);
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+
     #description .des:last-child {
         display: none;
     }
@@ -841,6 +858,12 @@ footer {
 }
 
 @media (max-width: 576px) {
+
+    .logo {
+        flex: 1;
+        padding: 0 0 0 30px;
+    }
+
     .laptop > img {
         width: 100%;
     }
@@ -862,9 +885,9 @@ footer {
         }
 
         .main-nav-scroll .menu {
-            padding: 0 35px;
+            padding: 2px 20px;
             display: inline-block;
-            width: 30%;
+            width: 22%;
             float: left;
         }
 
@@ -873,10 +896,6 @@ footer {
             font-size: 2em;
         }
 
-
-    header {
-        height: 400px;
-    }
 
     #media {
         padding: 0;
@@ -917,9 +936,9 @@ footer {
         }
 
         .main-nav .menu {
-            padding: 0 35px;
+            padding: 2px 20px;
             display: inline-block;
-            width: 30%;
+            width: 22%;
             float: left;
         }
 
@@ -1013,22 +1032,24 @@ footer {
                     border-left: none;
                     padding-left: 0;
                 }
+
     #gallery {
         height: 1785px;
     }
-    #gallery .gallery-box {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
 
-    #gallery .min-box {
-        max-width: 100%;
-    }
+        #gallery .gallery-box {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-    #gallery .min-box-mask {
-        height: 99%;
-    }
+        #gallery .min-box {
+            max-width: 100%;
+        }
+
+        #gallery .min-box-mask {
+            height: 99%;
+        }
 
     #suport {
         padding: 50px 0;
@@ -1124,5 +1145,14 @@ footer {
 
     .box-5 {
         top: 0;
+    }
+
+    footer p {
+        text-align: right;
+        position: absolute;
+        left: 19%;
+        font-weight: bold;
+        color: #fff;
+        line-height: 50px;
     }
 }
