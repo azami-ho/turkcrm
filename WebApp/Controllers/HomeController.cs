@@ -14,11 +14,19 @@ namespace TurkCRM.WebApp.Controllers
             _logger = logger;
         }
 
-        [ResponseCache(Duration = 20,VaryByHeader = "User-Agent")]
+        [ResponseCache(Duration = 20, VaryByHeader = "User-Agent")]
         public IActionResult Index()
         {
             return View();
         }
+
+        [Route("/Neden-CRM-yazılımı")]
+        public IActionResult WhyCRM()
+        {
+            return View();
+        }
+
+
 
         public IActionResult Nav(string text)
 

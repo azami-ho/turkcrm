@@ -150,6 +150,10 @@ section {
     display: flex;
 }
 
+.content {
+    min-height: 450px;
+}
+
 .laptop {
     margin-top: 150px;
     flex: 6;
@@ -216,12 +220,12 @@ main {
         #description .des p {
             text-align: justify;
             line-height: 20px;
+            padding: 25px 0px;
         }
 
 #media {
-    min-height: 300px;
     text-align: center;
-    padding: 0 100px 70px;
+    padding: 0 100px;
 }
 
     #media .media-title {
@@ -1034,7 +1038,7 @@ footer {
                 }
 
     #gallery {
-        height: 1785px;
+        height: 1540px;
     }
 
         #gallery .gallery-box {
