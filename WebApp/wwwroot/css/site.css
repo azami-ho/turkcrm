@@ -31,6 +31,10 @@ body {
     line-height: 1;
 }
 
+p {
+    line-height: 20px;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -150,6 +154,32 @@ section {
     display: flex;
 }
 
+.article {
+    padding: 150px 0;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+    .page-title h1, .page-title h2, .page-title h3 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+.article-text p {
+    text-align: justify;
+    display: block;
+}
+
+.article-text h1, .article-text h2, .article-text h3 {
+    /*text-align: center;*/
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
 .content {
     min-height: 450px;
 }
@@ -225,7 +255,7 @@ main {
 
 #media {
     text-align: center;
-    padding: 0 100px;
+    padding: 35px 100px;
 }
 
     #media .media-title {
@@ -244,6 +274,33 @@ main {
         padding: 30px 30px;
         display: inline-block;
     }
+
+        #media .media-content > a {
+            width: 200px;
+            padding: 25px 20px;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            box-shadow: 3px 3px 5px #888888;
+        }
+
+            #media .media-content > a:hover {
+                -webkit-transition: transform 0.2s ease-in-out;
+                -moz-transition: transform 0.2s ease-in-out;
+                -o-transition: transform 0.2s ease-in-out;
+                transition: transform 0.2s ease-in-out;
+                /*-ms-transform: translate(5px,5px);
+                transform: translate(5px,5px);*/
+                transform: scale(1.1, 1.1);
+            }
+
+            #media .media-content > a.w-crm {
+                background: #333;
+            }
+
+            #media .media-content > a.h-crm {
+                background: #1a649b;
+            }
 
         #media .media-content img {
             width: 350px;
@@ -677,6 +734,8 @@ footer {
             }
 
 @media (max-width: 1200px) {
+
+
     .logo {
         flex: 1;
         padding: 0 0 0 40px;
