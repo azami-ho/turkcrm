@@ -504,10 +504,6 @@ footer {
 }
 
     footer p {
-        text-align: right;
-        position: absolute;
-        left: 45%;
-        font-weight: bold;
         color: #fff;
         line-height: 50px;
     }
@@ -570,8 +566,9 @@ footer {
 
         #gallery .min-box-mask > p {
             color: #fff;
-            padding: 25px 25px;
+            padding: 15px 25px;
             text-align: justify;
+            line-height: unset;
         }
 
     #gallery .min-box {
