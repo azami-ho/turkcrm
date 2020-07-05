@@ -1,5 +1,20 @@
-﻿@import url('../fonts/Colaborate/style.css');
+﻿@font-face {
+    font-family: 'Colaborate';
+    src: url(/fonts/Colaborate/Colaborate.eot);
+    src: url('/fonts/Colaborate/Colaborate.eot?#iefix') format('embedded-opentype'),url(/fonts/Colaborate/Colaborate.woff2) format('woff2'),url(/fonts/Colaborate/Colaborate.woff) format('woff'),url(/fonts/Colaborate/Colaborate.ttf) format('truetype'),url('/fonts/Colaborate/Colaborate.svg#Colaborate') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
 
+@font-face {
+    font-family: 'Colaborate';
+    src: url(/fonts/Colaborate/Colaborate-Medium.eot);
+    src: url('/fonts/Colaborate/Colaborate-Medium.eot?#iefix') format('embedded-opentype'),url(/fonts/Colaborate/Colaborate-Medium.woff2) format('woff2'),url(/fonts/Colaborate/Colaborate-Medium.woff) format('woff'),url(/fonts/Colaborate/Colaborate-Medium.ttf) format('truetype'),url('/fonts/Colaborate/Colaborate-Medium.svg#Colaborate-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
