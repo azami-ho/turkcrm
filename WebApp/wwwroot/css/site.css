@@ -310,6 +310,7 @@ main {
     display: inline-block;
     border-radius: 3px;
     text-decoration: none;
+    text-align:center;
     box-shadow: 3px 3px 5px #888888;
 }
 
@@ -758,6 +759,9 @@ footer {
                 border-bottom: 1px solid gainsboro;
                 padding: 15px 0;
             }
+.media-box{
+    text-align:center;
+}
 
 @media (max-width: 1300px) {
     .box-5 {
